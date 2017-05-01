@@ -1,0 +1,26 @@
+public class MyClass{
+	
+		public static void main(String s[])
+		{
+		A a = new A();
+		a.callMethod();
+		
+		} 
+}
+
+class C{	
+	void test(){
+		System.out.println("Test Achieved");
+	}
+}
+
+class B extends C{
+	
+}
+
+class A extends B{
+	 
+	void callMethod(){
+		super.test();
+	}
+}
